@@ -1,4 +1,5 @@
 import {randomInt} from '../randomInt.js';
+
 const isEven = (number) =>  {
     if (number % 2 === 0) {
         return 'yes';
@@ -7,7 +8,7 @@ const isEven = (number) =>  {
     }
 }; 
 
-export const  brainGame = () => {
+export const  RunBrainEven = () => {
     let question = randomInt(0, 100);
     const answer = isEven(question);
     return {question, answer};

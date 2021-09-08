@@ -11,7 +11,7 @@ const getcorrectAnswer = (firstNumber, difference, lengthOfProgression) => {
     return progression;
 };
 
-export const brainProgression = () => {
+export const runBrainProgression = () => {
     const firstNumber = randomInt(0, 30);
     const difference = randomInt(1, 12);
     const lengthOfProgression = randomInt(5, 12);

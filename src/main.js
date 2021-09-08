@@ -1,8 +1,10 @@
 import readlineSync from 'readline-sync';
-import {cli} from './cli.js'
-export const game = (getRound, rule) => {
+
+export const runGame = (getRound, rule) => {
     let correctCount = 0;
-    const name = cli();
+    console.log('Welcome to the Brain Games!');
+    const name = readlineSync.question('May I have your name? ');
+    console.log(`Hello, ${name}!`);
     console.log(rule);
     while (correctCount < 3){
         const object = getRound();

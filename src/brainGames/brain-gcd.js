@@ -11,7 +11,7 @@ const getCorrectAnswer = (num1, num2) => {
     return(num1 + num2);
 };
 
-export const brainGcd = () => {
+export const runBrainGcd = () => {
     const number1 = randomInt(1, 100);
     const number2 = randomInt(1, 100);
     const question = `${number1} ${number2}`;

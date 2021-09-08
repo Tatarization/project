@@ -1,4 +1,3 @@
-
 import {randomInt} from '../randomInt.js';
 
 const isPrime = (number) =>  {
@@ -15,7 +14,7 @@ const isPrime = (number) =>  {
     return flag? 'yes' : 'no';
 }; 
 
-export const  brainPrime = () => {
+export const  runBrainPrime = () => {
     let question = randomInt(0, 150);
     const answer = isPrime(question);
     return {question, answer};
