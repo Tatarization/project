@@ -1,3 +1,6 @@
+
+<a href="https://codeclimate.com/github/Tatarization/project/maintainability"><img src="https://api.codeclimate.com/v1/badges/40c028215cb3a8af7395/maintainability" /></a>
+
 # Brain-games
 
 *"Brain-games" - это 5 математических консольных игр*
@@ -19,6 +22,5 @@
 Пользователю показывается ряд чисел, образующий арифметическую прогрессию. Одно из чисел заменено двумя точками. Игрок должен определить это число.
 #### Простое ли число?
 Пользователю показывается случайное число. И ему нужно ответить yes, если число простое, или no — если составное.
-## Codeclimate badge
 
-<a href="https://codeclimate.com/github/Tatarization/project/maintainability"><img src="https://api.codeclimate.com/v1/badges/40c028215cb3a8af7395/maintainability" /></a>
+
