@@ -1,4 +1,4 @@
-import {randomInt} from '../randomInt.js';
+import {getRandomInt} from '../randomInt.js';
 
 const getCorrectAnswer = (num1, num2) => {
     while (num1 !== 0 && num2 !== 0) {
@@ -8,15 +8,14 @@ const getCorrectAnswer = (num1, num2) => {
             num2 = num2 % num1;
         }
     }
-    return(num1 + num2);
+    return num1 + num2;
 };
 
 export const runBrainGcd = () => {
-    const number1 = randomInt(1, 100);
-    const number2 = randomInt(1, 100);
+    const number1 = getRandomInt(1, 100);
+    const number2 = getRandomInt(1, 100);
     const question = `${number1} ${number2}`;
-    let answer = getCorrectAnswer(number1, number2);
-    answer = answer.toString();
+    const answer = getCorrectAnswer(number1, number2).toString();
     return {question, answer};
 };
 

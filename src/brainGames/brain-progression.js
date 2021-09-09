@@ -1,4 +1,4 @@
-import {randomInt} from '../randomInt.js';
+import {getRandomInt} from '../randomInt.js';
 
 const getcorrectAnswer = (firstNumber, difference, lengthOfProgression) => {
     let progression = [firstNumber];
@@ -12,14 +12,14 @@ const getcorrectAnswer = (firstNumber, difference, lengthOfProgression) => {
 };
 
 export const runBrainProgression = () => {
-    const firstNumber = randomInt(0, 30);
-    const difference = randomInt(1, 12);
-    const lengthOfProgression = randomInt(5, 12);
+    const firstNumber = getRandomInt(0, 30);
+    const difference = getRandomInt(1, 12);
+    const lengthOfProgression = getRandomInt(5, 12);
     const progression = getcorrectAnswer(firstNumber, difference, lengthOfProgression);
-    const missingIndex = randomInt(1,lengthOfProgression-2);
+    const missingIndex = getRandomInt(1,lengthOfProgression-2);
     let answer = progression[missingIndex].toString();
     progression[missingIndex] = '..';
-    let question = progression;
+    const question = progression;
     return {question, answer};
 };
 

@@ -1,4 +1,4 @@
-import {randomInt} from '../randomInt.js';
+import {getRandomInt} from '../randomInt.js';
 
 const isEven = (number) =>  {
     if (number % 2 === 0) {
@@ -9,7 +9,7 @@ const isEven = (number) =>  {
 }; 
 
 export const  RunBrainEven = () => {
-    let question = randomInt(0, 100);
+    const question = getRandomInt(0, 100);
     const answer = isEven(question);
     return {question, answer};
 };
